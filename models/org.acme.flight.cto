@@ -1,0 +1,14 @@
+namespace org.acme.flight
+
+asset Flight identified by assetKey {
+  o String flightNumber
+  o Route route
+  o String[] aliasFLightNumber
+
+}
+
+concept Route {
+  o String origin
+  o String destination
+  o DateTime schedule
+}
